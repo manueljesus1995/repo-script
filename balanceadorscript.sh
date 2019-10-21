@@ -37,7 +37,7 @@ rm /etc/apache2/sites-enabled/000-default.conf
 
 #Movemos el archivo descargado e la ruto donde se encontraba el original
 
-mv /home/ubuntu/archivo-conf-balanceador/000-default.conf /etc/apache2/sites-enabled/
+mv /home/ubuntu/archivos-conf/000-default.conf /etc/apache2/sites-enabled/
 
 #Reiniciamos apache2 para que se efectuen los cambios
 
