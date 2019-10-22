@@ -9,7 +9,7 @@ apt-get install nginx -y
 
 #Instalamos phppp-fpm para iteraccionar con el sistema gestor de base de datos
 
-apt-get install php-fpm php-mysql
+apt-get install php-fpm php-mysql -y
 
 #Configuramos php-fpm cambiando una linea de codifo por otra solo modificamos el ; que es liminado y el 1 por el 0
 
@@ -45,9 +45,8 @@ chown www-data:www-data * -R
 
 #Accedemos al directorio y configuramos la base de datos para que busque en la maquina en la que tenemos mysql en lugar de buscar en localhost
 
-sed -i 's/localhost/54.147.58.211/' /iaw-practica-lamp/src/config.php
+sed -i 's/localhost/54.147.58.211/' /var/www/html/iaw-practica-lamp/src/config.php
 
 #Reiniciamos nginx
 
 systemctl restart nginx
-
