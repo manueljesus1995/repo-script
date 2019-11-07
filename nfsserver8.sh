@@ -1,3 +1,6 @@
+#!/bin/bash
+set -x
+
 #Instalación de paquetes necesarios en el servidor NFS:
 
 apt-get update
@@ -5,7 +8,7 @@ apt-get install nfs-kernel-server
 
 #Cambiamos los permisos al directorio que vamos a compartir:
 
-chown nobody:nogroup /var/www/html/wp-content
+chown nobody:nogroup /var/www/html/wordpress/wp-content
 
 #Añadimos la siguiente línea al archivo exports
 
