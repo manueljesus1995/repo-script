@@ -1,5 +1,7 @@
 #!/bin/bash
 
+set -x
+
 #Para ejecutar el escript lo aremos como superusuario para evitar que nos pida contraseñas
 #Actualizacion de Repositorios
 
