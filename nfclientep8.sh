@@ -5,7 +5,7 @@ set -x
 #Instalación de paquetes necesarios en el cliente NFS:
 
 apt-get update
-apt-get install nfs-common
+apt-get install nfs-common -y
 
 #Creamos el punto de montaje en el cliente 
 

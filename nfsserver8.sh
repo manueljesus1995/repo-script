@@ -1,10 +1,11 @@
 #!/bin/bash
+
 set -x
 
 #Instalación de paquetes necesarios en el servidor NFS:
 
 apt-get update
-apt-get install nfs-kernel-server
+apt-get install nfs-kernel-server -y
 
 #Cambiamos los permisos al directorio que vamos a compartir:
 
