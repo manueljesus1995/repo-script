@@ -21,7 +21,7 @@ apt-get install git -y
 
 #Instalamos las debconf-utils
 
-apt-get install debconf-utils -y
+#apt-get install debconf-utils -y
 
 cd /var/www/html
 
