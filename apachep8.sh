@@ -31,8 +31,6 @@ wget https://es.wordpress.org/latest-es_ES.tar.gz
 
 tar -xzvf latest-es_ES.tar.gz 
 
-mv adminer-4.7.3-mysql.php index.php
-
 #Cambiamos el propietario del repositorio
 
 chown www-data:www-data * -R
