@@ -13,7 +13,7 @@ mount 3.90.39.15:/var/www/html/wordpress/wp-content /var/www/html/wordpress/wp-c
 
 #Añadimos la siguiente linea en el archivo /etc/fstab
 
-echo "52.146.223.45:/var/www/html/wordpress/wp-content /var/www/html/wordpress/wp-content  nfs auto,nofail,noatime,nolock,intr,tcp,actimeo=1800 0 0" >> /etc/fstab
+echo "3.84.5.159:/var/www/html/wordpress/wp-content /var/www/html/wordpress/wp-content  nfs auto,nofail,noatime,nolock,intr,tcp,actimeo=1800 0 0" >> /etc/fstab
 
 #Reiniciamos el servicio nfs
 
