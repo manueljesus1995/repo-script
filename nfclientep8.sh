@@ -9,7 +9,7 @@ apt-get install nfs-common -y
 
 #Creamos el punto de montaje en el cliente 
 
-mount 3.90.39.15:/var/www/html/wordpress/wp-content /var/www/html/wordpress/wp-content
+mount 3.84.5.159:/var/www/html/wordpress/wp-content /var/www/html/wordpress/wp-content
 
 #Añadimos la siguiente linea en el archivo /etc/fstab
 
