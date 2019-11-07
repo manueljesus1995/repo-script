@@ -57,7 +57,7 @@ sed -i 's/'localhost'/'52.91.57.43'/' wp-config.php
 
 #Damos permisos de lectura al fichero de configuracion.
 
-sudo chmod +x wp-config.php 
+chmod +x wp-config.php 
 
 #Introducir las siguientes lineas.
 
