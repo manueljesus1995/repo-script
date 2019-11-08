@@ -13,7 +13,7 @@ chown nobody:nogroup /var/www/html/wordpress/wp-content
 
 #Añadimos la siguiente línea al archivo exports
 
-echo "/var/www/html/wordpress/wp-content      18.208.128.180(rw,sync,no_root_squash,no_subtree_check)" >> /etc/exports
+echo "/var/www/html/wordpress/wp-content      3.94.10.1(rw,sync,no_root_squash,no_subtree_check)" >> /etc/exports
 
 #Reiniciamos el servicio nfs
 

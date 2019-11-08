@@ -61,9 +61,28 @@ chmod +x wp-config.php
 
 #Introducir las siguientes lineas.
 
-echo "define( 'WP_SITEURL', 'http://52.91.255.235/wordpress' );" >> wp-config.php
+echo "define( 'WP_SITEURL', 'http://3.86.112.221/wordpress' );" >> wp-config.php
 
-echo "define( 'WP_HOME', 'http://52.91.255.235' );" >> wp-config.php
+echo "define( 'WP_HOME', 'http://3.86.112.221' );" >> wp-config.php
+
+#movemos el index.php a la carpeta html lo cambiamos a un directorio que no es la raiz
+
+cp /var/www/html/worpress/index.php ../
+
+# a continuacion reempleazamos el contenido del index.php que esta fuera
+
+sed -i 's/'require( dirname( __FILE__ ) . '/wp-blog-header.php' );'/'require( dirname( __FILE__ ) . '/wordpress/wp-blog-header.php' );'/' /var/www/html/index.php
+
+cd /var/www/html
+
+sed -i 's/''/'' );'/' 
+
+
+
+
+
+
+
 
 systemctl restart apache2
 
