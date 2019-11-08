@@ -61,9 +61,9 @@ chmod +x wp-config.php
 
 #Introducir las siguientes lineas.
 
-#echo "define( 'WP_SITEURL', 'http://' );" >> wp-config.php
+echo "define( 'WP_SITEURL', 'http://52.91.255.235/wordpress' );" >> wp-config.php
 
-#echo "define( 'WP_HOME', 'http://' );" >> wp-config.php
+echo "define( 'WP_HOME', 'http://52.91.255.235' );" >> wp-config.php
 
 systemctl restart apache2
 
