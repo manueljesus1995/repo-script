@@ -71,7 +71,7 @@ cp /var/www/html/worpress/index.php ../
 
 # a continuacion reempleazamos el contenido del index.php que esta fuera
 
-sed -i 's/'require( dirname( __FILE__ ) . '/wp-blog-header.php' );'/'require( dirname( __FILE__ ) . '/wordpress/wp-blog-header.php' );'/' /var/www/html/index.php
+sed -i 's#wp-blog-header.php#/wordpress/wp-blog-header.php#' /var/www/html/index.php
 
 cd /home/ubuntu
 
