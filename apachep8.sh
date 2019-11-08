@@ -73,15 +73,13 @@ cp /var/www/html/worpress/index.php ../
 
 sed -i 's/'require( dirname( __FILE__ ) . '/wp-blog-header.php' );'/'require( dirname( __FILE__ ) . '/wordpress/wp-blog-header.php' );'/' /var/www/html/index.php
 
-cd /var/www/html
+cd /home/ubuntu
 
-sed -i 's/''/'' );'/' 
+rm -rf archivo-conf-balanceador
 
+git clone https://github.com/manueljesus1995/archivo-conf-balanceador.git
 
-
-
-
-
+mv /archivo-conf-balanceador/htaccess /var/www/html/.htaccess
 
 
 systemctl restart apache2
