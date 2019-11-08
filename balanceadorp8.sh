@@ -29,15 +29,17 @@ cd /home/ubuntu
 
 #Descargamos mi repositorio de github para bajar el archivo 000-default.conf modificado
 
+rm -rf archivo-conf-balanceador.git
+
 git clone https://github.com/manueljesus1995/archivo-conf-balanceador.git
 
 #Accedemos a la ruta del archivo y lo eliminamos o en mi caso opto por poner ruta absoluta y lo eliminamos
 
-rm /etc/apache2/sites-enabled/000-default.conf
+rm /etc/apache2/sites-available/000-default.conf
 
 #Movemos el archivo descargado e la ruto donde se encontraba el original
 
-mv /home/ubuntu/archivos-conf/000-default.conf /etc/apache2/sites-enabled/
+mv /home/ubuntu/archivo-conf-balanceador/000-default.conf /etc/apache2/sites-available/
 
 #Reiniciamos apache2 para que se efectuen los cambios
 
